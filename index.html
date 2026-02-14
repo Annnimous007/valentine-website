@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">Will You Be My Valentine? 💖</h1>
+
+    <div class="btn-group">
+        <button class="yes-btn" onclick="openPopup()">Yes ❤️</button>
+        <button class="no-btn" onclick="showGif()">No 😢</button>
+    </div>
+</div>
+
+<!-- GIF BOX -->
+<div id="gifBox" class="gifBox">
+    <div class="gifContent">
+        <h2>Are you sure? 🥺</h2>
+
+        <!-- IMPORTANT: Replace with direct GIF link OR local file -->
+        <img src="cute.gif" alt="funny gif">
+
+        <button onclick="openPopup()">Okay Fine YES ❤️</button>
+        <button onclick="closeGif()">Close</button>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popupContent">
+        <h2>💌 Choose Your Letter</h2>
+
+        <button onclick="englishLetter()">English 💕</button>
+        <button onclick="tamilLetter()">தமிழ் 💗</button>
+
+        <p id="letterText"></p>
+
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
