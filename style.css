@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Main container */
+.container {
+    color: white;
+}
+
+.title {
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn-group button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-group button:hover {
+    transform: scale(1.1);
+}
+
+.yes-btn {
+    background: #ff1744;
+    color: white;
+}
+
+.no-btn {
+    background: gray;
+    color: white;
+}
+
+/* GIF BOX */
+.gifBox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.gifContent {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    animation: popupAnim 0.4s ease;
+}
+
+.gifContent img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 320px;
+    animation: popupAnim 0.4s ease;
+}
+
+@keyframes popupAnim {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+#letterText {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d81b60;
+}
